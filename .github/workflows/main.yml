@@ -1,0 +1,13 @@
+name: integration
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  echo-test:
+    name: echo test
+    runs-on: ubuntu-latest
+    steps:
+    - name: My first Step
+        run: echo Hello World
