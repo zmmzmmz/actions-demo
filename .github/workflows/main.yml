@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-generate:
-    name: echo test
+    name: build next.js
     runs-on: ubuntu-latest
     steps:
     - name: My first Step
