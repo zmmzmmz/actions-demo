@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+  watch:
 
 jobs:
   echo-test:
@@ -11,3 +12,9 @@ jobs:
     steps:
     - name: My first Step
       run: echo Hello World
+
+    - name: Checkout
+      uses: actions/checkout@master
+      with:
+        ref: gh-pages
+      
